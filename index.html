@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeopardy Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Compleanno Luca Gasa</h1>
+
+    <div id="player-setup">
+        <label for="num-players">Numero di Giocatori:</label>
+        <input type="number" id="num-players" min="1" max="4">
+        <button onclick="setupPlayers()">Imposta Giocatori</button>
+    </div>
+
+    <div id="player-names" style="display: none;">
+        <div id="player-name-inputs"></div>
+        <button onclick="startGame()">Inizia Gioco</button>
+    </div>
+
+    <div id="container">
+        <div id="scoreboard"></div>
+
+        <div id="board"></div>
+
+        <div id="question-box">
+            <div id="question-text"></div>
+            <button onclick="showAnswer()">Mostra Risposta</button>
+            <div id="answer-text"></div>
+            <button onclick="correctAnswer()">Risposta Corretta</button>
+            <button onclick="wrongAnswer()">Risposta Sbagliata</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
